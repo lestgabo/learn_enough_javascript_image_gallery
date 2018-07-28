@@ -25,19 +25,19 @@ Learn Enough JavaScript to Be Dangerous - Chapter 11 - Full sample app: Image Ga
   - lastly, to start up the server 
   
   ```bash
-    ec2-user:~/environment/repos/le_js_full (master) $ jekyll serve --port $PORT
+    ec2-user:~/environment/repos/le_js_full (master) $ jekyll serve --port $PORT --host $IP
     
     
     Configuration file: none
             Source: /home/ec2-user/environment/repos/le_js_full
        Destination: /home/ec2-user/environment/repos/le_js_full/_site
-   Incremental build: disabled. Enable with --incremental
-        Generating... 
-                    done in 0.093 seconds.
-   Auto-regeneration: enabled for '/home/ec2-user/environment/repos/le_js_full'
-      Server address: http://127.0.0.1:8080
-    Server running... press ctrl-c to stop.
-  
+     Incremental build: disabled. Enable with --incremental
+          Generating... 
+                        done in 0.097 seconds.
+     Auto-regeneration: enabled for '/home/ec2-user/environment/repos/le_js_full'
+        Server address: http://127.0.0.1:8080
+      Server running... press ctrl-c to stop.
+      
   ```
   
   - it says  Server address: http://127.0.0.1:8080, but the server address for mine was actually at:
