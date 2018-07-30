@@ -4,7 +4,7 @@ This is the full starting application (with image gallery) for the final chapter
 
 Learn Enough JavaScript to Be Dangerous - Chapter 11 - Full sample app: Image Gallery
 
-- for fellow aspiring developers using an online IDE (I am using amazon aws c9) here's how I started the server:
+- In development - for fellow aspiring developers using an online IDE (I am using amazon aws c9) here's how I started the server:
   - choosing the JavaScript option when creating the environment, ruby is already installed
   
   ```bash
