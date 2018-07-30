@@ -12,12 +12,11 @@ function activateGallery() {
   // galleryThumbsCurrent[2].classList.add("current")
   // let galleryThumbsCurrent = document.querySelector("#gallery-thumbs > div");
     
-  let currentSelected = thumbnails[0].parentNode;
+
   
   thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener("click", function() {
-      currentSelected.className = "";
-      thumbnail.parentNode.classList.add("current");
+
 
       // Set clicked image as main image.
       let newImageSrc = thumbnail.dataset.largeVersion;
@@ -29,7 +28,9 @@ function activateGallery() {
       infoTitle.innerText       = newinfoTitle;      
       infoDescription.innerText = newInfoDescription;
       
-      currentSelected = thumbnail.parentNode;
+      // Change which image is current
+      document.querySelector(".current").classList.remove("current");
+      thumbnail.parentNode.classList.add("current");
     });
   });  
   
