@@ -17,15 +17,12 @@ function activateGallery() {
   thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener("click", function() {
       currentSelected.className = "";
-      if (thumbnail.parentNode.classList == "current") {
-        thumbnail.parentNode.classList.remove("current");
-      } else {
-        thumbnail.parentNode.classList.add("current");
-      }
+      thumbnail.parentNode.classList.add("current");
 
       // Set clicked image as main image.
       let newImageSrc = thumbnail.dataset.largeVersion;
       mainImage.setAttribute("src", newImageSrc);
+      mainImage.setAttribute("alt", thumbnail.alt);
       
       let newinfoTitle          = thumbnail.dataset.title;
       let newInfoDescription    = thumbnail.dataset.description;
